@@ -1,68 +1,42 @@
 {
-  "people": [
-    {
-      "name": "sofia torres0",
-      "email": "sofi@mail.com",
-      "telephone": "123456789",
-      "id": 1
-    }
-  ],
-  "places": [
-    {
-      "name": "A2",
-      "ubication": "Area de ingenierias",
-      "type_place": "edificio"
-    }
-  ],
-  "autorizedPersonnel": [
-    {
-      "name": "michael taboada",
-      "email": "michaeltaboada@mail.com",
-      "telephone": "129876789",
-      "id": 2,
-      "rolname": "desarrollador",
-      "roltype": "Ingeniero de sistemas",
-      "rolcode": 245
-    }
-  ],
-  "events": [
-    {
-      "place": {
+    "people": [
+      {
+        "name": "sofia torres0",
+        "email": "sofi@mail.com",
+        "telephone": "123456789",
+        "id": 1
+      },
+      {
+        "name": "Andres vega",
+        "email": "andres@mail.com",
+        "telephone": "154685165",
+        "id": 100
+      }
+    ],
+    "places": [
+      {
         "name": "A2",
         "ubication": "Area de ingenierias",
         "type_place": "edificio"
       },
-      "id": 234,
-      "timeIn": 12,
-      "timeOut": 16,
-      "date": "17/04/23"
-    },
-    {
-      "place": {
-        "name": "A2",
-        "ubication": "Area de ingenierias",
-        "type_place": "edificio"
+      {
+        "name": "smartfit",
+        "ubication": "nuevo bosque",
+        "type_place": "gimnasio"
       },
-      "id": 234,
-      "timeIn": 12,
-      "timeOut": 16,
-      "date": "17/04/23"
-    },
-    {
-      "place": {
-        "name": "A2",
-        "ubication": "Area de ingenierias",
-        "type_place": "edificio"
+      {
+        "name": "smartfit",
+        "ubication": "nuevo bosque",
+        "type_place": "gimnasio"
       },
-      "id": 234,
-      "timeIn": 12,
-      "timeOut": 16,
-      "date": "17/04/23"
-    }
-  ],
-  "visitor": [
-    {
-      "responsible": {
+      {
+        "name": "smartfit",
+        "ubication": "nuevo bosque",
+        "type_place": "gimnasio"
+      }
+    ],
+    "autorizedPersonnel": [
+      {
         "name": "michael taboada",
         "email": "michaeltaboada@mail.com",
         "telephone": "129876789",
@@ -70,27 +44,45 @@
         "rolname": "desarrollador",
         "roltype": "Ingeniero de sistemas",
         "rolcode": 245
-      },
-      "event": {
+      }
+    ],
+    "events": [
+      {
         "place": {
           "name": "A2",
           "ubication": "Area de ingenierias",
           "type_place": "edificio"
         },
-        "id": 1,
-        "timeIn": 1622815200,
-        "timeOut": 1622822400,
-        "date": "2021-06-04"
+        "id": 234,
+        "timeIn": 12,
+        "timeOut": 16,
+        "date": "17/04/23"
       },
-      "name": "Jane Doe",
-      "email": "janedoe@example.com",
-      "telephone": "555-5678",
-      "id": 2
-    }
-  ],
-  "package": [
-    {
-      "subject": {
+      {
+        "place": {
+          "name": "A2",
+          "ubication": "Area de ingenierias",
+          "type_place": "edificio"
+        },
+        "id": 234,
+        "timeIn": 12,
+        "timeOut": 16,
+        "date": "17/04/23"
+      },
+      {
+        "place": {
+          "name": "A2",
+          "ubication": "Area de ingenierias",
+          "type_place": "edificio"
+        },
+        "id": 234,
+        "timeIn": 12,
+        "timeOut": 16,
+        "date": "17/04/23"
+      }
+    ],
+    "visitor": [
+      {
         "responsible": {
           "name": "michael taboada",
           "email": "michaeltaboada@mail.com",
@@ -115,10 +107,39 @@
         "email": "janedoe@example.com",
         "telephone": "555-5678",
         "id": 2
-      },
-      "name": "libreta",
-      "description": "mediano",
-      "code": 2344
-    }
-  ]
-}
+      }
+    ],
+    "package": [
+      {
+        "subject": {
+          "responsible": {
+            "name": "michael taboada",
+            "email": "michaeltaboada@mail.com",
+            "telephone": "129876789",
+            "id": 2,
+            "rolname": "desarrollador",
+            "roltype": "Ingeniero de sistemas",
+            "rolcode": 245
+          },
+          "event": {
+            "place": {
+              "name": "A2",
+              "ubication": "Area de ingenierias",
+              "type_place": "edificio"
+            },
+            "id": 1,
+            "timeIn": 1622815200,
+            "timeOut": 1622822400,
+            "date": "2021-06-04"
+          },
+          "name": "Jane Doe",
+          "email": "janedoe@example.com",
+          "telephone": "555-5678",
+          "id": 2
+        },
+        "name": "libreta",
+        "description": "mediano",
+        "code": 2344
+      }
+    ]
+  }
