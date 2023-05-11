@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Proyecto</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+      }
+      
+      .container {
+        max-width: 80%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      h1 {
+        text-align: center;
+        color: #555555;
+        margin-top: 0;
+      }
+      
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 5%;
+        margin-top: 30px;
+        max-width: 100%;
+      }
+      
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #444444;
+        margin: 50px 0;
+        text-align: justify;
+        font-style: oblique 20deg;
+      }
+      
+      h2 {
+        color: #555555;
+        margin-top: 50px;
+      }
+      
+      h4 {
+        font-size: 16px;
+        color: #666666;
+        margin: 10px 0;
+      }
+      
+      table {
+        border-collapse: collapse;
+        margin: 50px auto;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+      }
+      
+      th {
+        background-color: #000000;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding: 10px 20px;
+      }
+      
+      td {
+        border: 1px solid #000000;
+        padding: 10px 20px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #F2F2F2;
+      }
+      
+      tr:hover {
+        background-color: #DDDDDD;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Income System Control</h1>
+      <p>Bienvenido a la interfaz para probar los servicios implementados mediante el framework fastApi, 
+        el cual es un framework web de alto rendimiento y moderno para crear APIs con Python 3.7+ 
+        basado en estandares abiertos y tecnologias modernas.
+        Fue desarrollado para ofrecer una velocidad de procesamiento y una facilidad de uso sin precedentes
+        para la creacion de APIs RESTful. FastAPI tiene una sintaxis declarativa, facil de leer y documentar, 
+        y utiliza el tipado estatico para mejorar el rendimiento y la seguridad de las aplicaciones. 
+        Ademas, cuenta con una generacion de documentacion automatica y validacion de datos integrada en su nucleo.
+        Es ampliamente utilizado por desarrolladores de Python para la creacion de microservicios, 
+        aplicaciones web y sistemas web escalables.</p> 
+        <h2>Contamos con los siguientes servicios</h2>
+      <table>
+        <tr>
+          <th>Servicio</th>
+          <th>Descripcion</th>
+        </tr>
+        <tr>
+          <td>Get People</td>
+          <td>Muestra a las personas</td>
+        </tr>
+        <tr>
+          <td>Get place</td>
+          <td>Muestra a los lugares</td>
+        </tr>
+        <tr>
+          <td>Get person</td>
+          <td>Muestra a la persona con el ID ingresado</td>
+        </tr>
+        <tr>
+          <td>Post person</td>
+          <td>Registra una persona</td>
+        </tr>
+        <tr>
+          <td>Post place</td>
+          <td>Crea un lugar</td>
+        </tr>
+      </table>
+    </body>
+  </html>

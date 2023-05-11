@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 import json
+from fastapi.responses import HTMLResponse
 
 # Importing required services and models
 from services.createPerson import create_person
@@ -10,8 +11,17 @@ from services.constans import dataPath
 
 # Initializing the FastAPI app
 app = FastAPI()
+app.title = "Income System Control"
 
-# A GET endpoint to retrieve all people data from a database
+@app.get("/", tags=['home'])
+def message():
+    with open("index.html", "r") as file:
+        content = file.read()
+    return HTMLResponse(content)
+
+
+# A GET endpoint to retrieve all 
+# people data from to database
 @app.get("/people")
 async def get_people():
     with open(dataPath, "r") as f:
@@ -27,6 +37,18 @@ async def get_place():
 
     return data['places']
 
+@app.get('/people/{id}')
+def get_person(id: int):
+    with open(dataPath, "r") as f:
+        data = json.load(f)
+    for person in data['people']:
+        if person['id'] ==  id:
+            return 'Persona encontrada', person
+        else:
+            return 'Persona no encontrada'
+    return id
+
+
 # A POST endpoint to create a new person object in the database
 @app.post("/person")
 async def create(person: PersonIn):
@@ -38,5 +60,7 @@ async def create(person: PersonIn):
 async def create(place: PlaceIn):
     createPlace = create_place(place)
     return {"Place": createPlace}
+
+
 
 
