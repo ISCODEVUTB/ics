@@ -69,3 +69,39 @@ class Visitor(Person):
                     self.responsible == other.responsible and
                     self.event == other.event)
         return False
+    
+    def create_credentials(self) -> dict:
+        """
+        Creates credentials for the visitor.
+        
+        Returns:
+            dict: A dictionary containing the credentials.
+        """
+        credentials = {
+            
+            'ID': self.id,
+            'Hora de entrada': self.event.timeIn,
+            'Hora de salida': self.event.timeOut,
+            'Sitio asignado': self.event.location
+        }
+        return credentials
+    
+    def modify_credentials(self, field: str, new_value) -> None:
+        """
+        Modifies a field in the visitor's credentials.
+
+        Args:
+            field (str): The field to be modified.
+            new_value: The new value for the field.
+        """
+        if field == 'ID':
+            self.id = new_value
+        elif field == 'Hora de entrada':
+            self.event.timeIn = new_value
+        elif field == 'Hora de salida':
+            self.event.timeOut = new_value
+        elif field == 'Sitio asignado':
+            self.event.location = new_value
+        else:
+            raise ValueError("Invalid field")
+

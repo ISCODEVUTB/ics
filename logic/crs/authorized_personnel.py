@@ -114,3 +114,36 @@ class AuthorizedPersonnel(Person):
                     self.roltype == other.roltype and
                     self.rolcode == other.rolcode)
         return False
+
+
+    def create_credentials(self) -> dict:
+        """
+        Creates credentials for the visitor.
+        
+        Returns:
+            dict: A dictionary containing the credentials.
+        """
+        credentials = {
+            
+            'ID de rol': self.rolcode,
+            'Nombre del rol': self.rolname,
+            'Tipo de rol': self.roltype
+        }
+        return credentials
+    
+    def modify_credentials(self, field: str, new_value) -> None:
+        """
+        Modifies a field in the visitor's credentials.
+
+        Args:
+            field (str): The field to be modified.
+            new_value: The new value for the field.
+        """
+        if field == 'ID de rol':
+            self.rolcode = new_value
+        elif field == 'Nombre del rol':
+            self.rolname = new_value
+        elif field == 'Tipo de rol':
+            self.roltype = new_value
+        else:
+            raise ValueError("Invalid field")
