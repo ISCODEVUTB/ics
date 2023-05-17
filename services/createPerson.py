@@ -15,5 +15,5 @@ def create_person(person: PersonIn):
     with open(dataPath, "w") as f:
         json.dump(data, f)
 
-    # Returning a succes message
+    # Returning a success message
     return {"msg": "Person created succefully"} 
